@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+#form {
+    text-align: center;
+}
+
+input * {
+    height: 5%;
+    width: same-size;
+}
+
+
+/*body style*/
+
+body {
+    font-family: monaco, monospace;
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #921dff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+/*topnavbar*/
+
+.topnavbar {
+    overflow: hidden;
+    background-color: rgba(196, 191, 191, 0.822);
+    width: 100%;
+}
+
+.topnavbar a {
+    float: center;
+    display: block;
+    color: rgb(0, 0, 0)e;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Right-aligned link */
+
+.topnavbar a.right {
+    float: right;
+}
+
+.topnavbar a:hover {
+    background-color: rgb(0, 140, 255);
+    color: black;
+}
+
+.row {
+    padding: 1px;
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+}
+
+.card-header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 30px;
+    background-color: #921dff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+
+/* bottomnavbar */
+
+.bottomnavbar {
+    overflow: hidden;
+    background-color: rgba(196, 191, 191, 0.822);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*colourbotnavbar*/
+
+.bottomnavbar a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0)e;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+.bottomnavbar a:hover {
+    background-color: rgb(0, 140, 255);
+    color: black;
+}
+
+a:link,
+a:visited {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: rgb(0, 140, 255);
+}
+
+
+/* Column container */
+
+.main {
+    -ms-flex: 100%;
+    /* IE10 */
+    flex: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    align-items: center;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .main {
+        padding: 10px;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 30px;
+    background-color: #921dff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+
+/* Responsive layout - when the screen is more than 1000px wide */
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+    .main {
+        padding: 100px;
+    }
+    .column {
+        width: 25%;
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .column-card {
+        float: center;
+        width: 25%;
+        padding: 0 10px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        height: auto;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+input[type=text],
+input[type=tel],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: rgba(209, 187, 59, 0.781);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 140, 255);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+.col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+    right: 30px;
+    background-color: #921dff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
+}
